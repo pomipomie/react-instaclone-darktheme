@@ -14,6 +14,11 @@ import NotiSpeak from './others/noti-speak'
 import SideBar from './others/sidebar/sidebar'
 import AppRoutes from './App-routes'
 
+const styleTest = {
+  backgroundColor: '#000000 !important',
+  color: '#ffffff',
+}
+
 class App extends Component {
   componentDidMount = () => {
     let { dispatch } = this.props
@@ -26,7 +31,7 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="app">
+        <div className="app" style={styleTest}>
           <Header />
           <NotiSpeak un={unreadNotifications} />
           <SideBar un={unreadNotifications} uc={unreadMessages} />
