@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <Router>
         <div className="app" style={styleTest}>
-          <Header />
+          <Header style={styleTest} />
           <NotiSpeak un={unreadNotifications} />
           <SideBar un={unreadNotifications} uc={unreadMessages} />
           <AppRoutes />
